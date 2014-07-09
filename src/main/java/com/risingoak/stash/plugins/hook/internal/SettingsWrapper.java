@@ -25,8 +25,9 @@ public class SettingsWrapper {
     }
 
     public boolean isEnforceName() {
-        Boolean value = settings.getBoolean(ENFORCE_NAME);
-        return value != null ? value : false;
+//        Boolean value = settings.getBoolean(ENFORCE_NAME);
+//        return value != null ? value : false;
+        return false; // HACK HACK HACK
     }
 
     public boolean isAllowUsernameAt() {

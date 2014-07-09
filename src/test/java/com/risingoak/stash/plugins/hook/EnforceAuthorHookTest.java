@@ -120,7 +120,8 @@ public class EnforceAuthorHookTest extends BaseGitScmTest {
         Person author = getAuthorWithNameAndEmail("John Doe", "jdoe@example.com");
         StashUser pusher = getCurrentUserWithIdNameAndEmail("1234", "John L. Doe", "jdoe@example.com");
 
-        assertFalse(hook.hasValidAuthor(settings, author, pusher));
+        //assertFalse(hook.hasValidAuthor(settings, author, pusher));
+        assertTrue(hook.hasValidAuthor(settings, author, pusher));
     }
 
     @Test
